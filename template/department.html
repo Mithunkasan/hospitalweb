@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'basepage.html' %}
+
+{% block content %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+     <style>
+        .dep_body {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            width: 100%;
+        }
+
+        .dep_item {
+            flex: 1 0 200px;
+            margin: 10px;
+            color: black;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .deptbox{
+            background-image: url("https://media.istockphoto.com/id/844459880/vector/medical-icons-silver-series.jpg?s=612x612&w=0&k=20&c=zCb7NN0S94sBlLrKIDiuhGE9HRXLRjEn9bb54jZox_I=");
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<div class="deptbox">
+    <h2 style="text-align: center">Our Departments</h2>
+    <div class="dep_body">
+        {% for dept in depart %}
+        <div class="dep_item" style="background-color: white;">
+            <h4>{{ dept.department_name }}</h4>
+            <p>{{ dept.department_details }}</p>
+        </div>
+        {% endfor %}
+    </div>
+    </div>
+</body>
+{% endblock %}
+</html>

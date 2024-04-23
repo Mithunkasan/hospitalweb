@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'basepage.html' %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+    .conta{
+        color: white;
+        background-color: white;
+        height: 600px;
+        width: 100%;
+    }
+    .conta1{
+        height: 600px;
+        width: 50%;
+        float: left;
+    }
+    .conta2{
+        height: 600px;
+        width: 50%;
+        float: left;
+    }
+    input{
+        height: 50px;
+        width: 300%;
+    }
+    button{
+        height: 40px;
+        width: 90%;
+        background-color: dimgray;
+        color: white;
+    }
+    label{
+        color: black;
+    }
+</style>
+</head>
+<body>
+<small>Get in touch with us</small>
+<h2 style="text-align: center">Contact</h2>
+<div class="conta">
+    <div class="conta1">
+        <table>
+            <tr>
+        <td><label>Name</label></td>
+        <td><input type="text" placeholder="Enter Name"></td><br>
+                </tr>
+            <tr>
+        <td><label>Email</label></td>
+        <td><input type="email" placeholder="Enter Email"></td><br>
+            </tr>
+            <tr>
+        <td><label>Phone No</label></td>
+        <td><input type="number" placeholder="Enter Mobile No"></td><br>
+            </tr>
+            <tr>
+        <td><label>Subject</label></td>
+        <td><input type="text" placeholder="Enter Subject"></td><br>
+            </tr>
+            <tr>
+        <td><label>Message</label></td>
+        <td><input type="text" placeholder="Enter Your Message here"></td><br>
+            </tr>
+        </table><br>
+        <button type="submit">Submit</button>
+    </div>
+    <div class="conta2">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2790.20191536787!2d76.95114651166706!3d8.50507198557884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1710738063369!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+</body>
+{% endblock %}
+</html>

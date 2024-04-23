@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'basepage.html' %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .abf{
+            background-image: url("https://media.istockphoto.com/id/1311588752/video/professional-black-female-head-nurse-uses-medical-computer-in-the-background-modern-equipment.jpg?s=640x640&k=20&c=6s3qFQ6OZ6lw9LkNlUjuX3x7y7J28EzmQmDApSsH8Es=");
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            color: black;
+        }
+        .cont1{
+            height: 550px;
+            width: 50%;
+            float: left;
+            color: white;
+        }
+        .info{
+            height: 550px;
+            width: 50%;
+            float: left;
+            color: white;
+        }
+        h1{
+            text-align: center;
+            color: white;
+        }
+        .img1{
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="abf">
+    <header>
+        <h1>App Hospital</h1>
+    </header>
+    <div class="container">
+        <div class="cont1">
+            <img class="img1" src="https://media.istockphoto.com/id/1312706413/photo/modern-hospital-building.jpg?s=612x612&w=0&k=20&c=oUILskmtaPiA711DP53DFhOUvE7pfdNeEK9CfyxlGio=" height="500px" width="500px">
+        </div>
+        <div class="info">
+            <p>App Hospital is committed to providing exceptional healthcare services to our community.</p>
+            <ul>
+                <li>State-of-the-art facilities</li>
+                <li>Highly skilled medical professionals</li>
+                <li>Comprehensive range of medical specialties</li>
+                <li>Focus on patient-centric care</li>
+                <li>Advanced technology and equipment</li>
+                <li>24/7 emergency services</li>
+                <li>Conveniently located</li>
+                <li>Easy appointment scheduling</li>
+                <li>Insurance acceptance</li>
+                <li>Commitment to safety and quality</li>
+            </ul>
+            <p>For more information or to schedule an appointment, please contact us.</p>
+        </div>
+    </div>
+</div>
+</body>
+{% endblock %}
+</html>

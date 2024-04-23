@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'basepage.html' %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    #f1{
+        height: 400px;
+        width: 400px;
+    }
+    .b1{
+        height: 200px;
+        width: 200px;
+        color: white;
+        background-color: black;
+        margin-left: 550px;
+        padding-top: 50px;
+    }
+    button{
+        margin-left: 100px;
+    }
+    h3{
+        text-align: center;
+        color: white;
+    }
+    .boo1{
+        background-image: url("https://img.freepik.com/premium-photo/front-view-nurse-typing-medical-expertise-computer-while-background-black-practitioner-doctor-discussing-with-sick-man-healthcare-treatment-hospitalized-patient-having-respiratory-disorder_482257-16324.jpg");
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            color: black;
+    }
+
+</style>
+<body>
+<div class="boo1">
+<h3>Make an Appointment</h3>
+<div id="f1" class="b1">
+<form method="post">
+    {% csrf_token %}
+    {{myform}}
+<br><button type="submit">submit</button>
+</form>
+</div>
+</div>
+</body>
+{% endblock %}
+</html>
